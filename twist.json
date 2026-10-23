@@ -1,0 +1,106 @@
+{
+  "categorie": "twists",
+  "versie": "1.0",
+  "twists": [
+    {
+      "id": "oneffen_veld",
+      "naam": "bal stuitert via een gat in het veld",
+      "omschrijving": "Een zwak schot stuitert via een oneffenheid in het gras over de keeper heen en gaat alsnog in."
+    },
+    {
+      "id": "net_scheurt",
+      "naam": "bal knalt door het doelnet heen",
+      "omschrijving": "Zo hard geschoten dat het net scheurt en de bal er aan de achterkant weer uitkomt; de scheids moet beslissen of het een goal is."
+    },
+    {
+      "id": "keeper_trapt_over_bal",
+      "naam": "keeper trapt over de bal bij terugspeelbal",
+      "omschrijving": "De bal rolt in slow motion het eigen doel in terwijl de keeper radeloos achtervolgt."
+    },
+    {
+      "id": "keeper_assist_tegenstander",
+      "naam": "keeper schiet bal in voeten van tegenstander",
+      "omschrijving": "De keeper schiet de bal recht in de voeten van een tegenstander, die alleen nog maar binnen hoeft te tikken."
+    },
+    {
+      "id": "vogel_raakt_bal",
+      "naam": "bal raakt een vogel",
+      "omschrijving": "Een vogel vliegt precies op het verkeerde moment door de baan van de bal en verandert de richting."
+    },
+    {
+      "id": "papegaai_valt_aan",
+      "naam": "papegaai valt speler aan",
+      "omschrijving": "Een papegaai valt een speler aan en onderbreekt de wedstrijd meerdere keren."
+    },
+    {
+      "id": "duif_op_net",
+      "naam": "duif landt op het net",
+      "omschrijving": "Een duif landt op het net en weigert te vertrekken, waardoor de wedstrijd stil komt te liggen."
+    },
+    {
+      "id": "cameradraad",
+      "naam": "bal raakt cameradraad boven het veld",
+      "omschrijving": "De bal ketst via een over het veld gespannen kabel alsnog het doel in."
+    },
+    {
+      "id": "keeper_glijdt_uit",
+      "naam": "keeper glijdt uit over eigen schoenveter",
+      "omschrijving": "De keeper glijdt uit over een losse veter, een plas of een achtergelaten bidon."
+    },
+    {
+      "id": "wind_curve",
+      "naam": "wind blaast bal in onmogelijke curve",
+      "omschrijving": "Een schot dat recht leek te gaan, zweeft door een windvlaag alsnog in de verre hoek."
+    },
+    {
+      "id": "eigen_doel_tackle",
+      "naam": "verdediger schiet in eigen doel",
+      "omschrijving": "De bal ketst via scheenbeen of stick precies langs zijn eigen keeper."
+    },
+    {
+      "id": "bal_in_kleding",
+      "naam": "bal blijft steken in kleding van keeper",
+      "omschrijving": "De bal blijft hangen in de uitrusting van de keeper en rolt er dan alsnog net over de lijn uit."
+    },
+    {
+      "id": "struikelen_over_bal",
+      "naam": "speler struikelt over de bal en scoort",
+      "omschrijving": "Een grappige botsing resulteert per ongeluk in een doelpunt."
+    },
+    {
+      "id": "scheids_in_de_weg",
+      "naam": "bal ketst via de scheidsrechter naar binnen",
+      "omschrijving": "De scheidsrechter staat in de weg en de bal ketst via hem het doel in, tot woedende protesten."
+    },
+    {
+      "id": "pinball_goal",
+      "naam": "bal stuitert via paal, lat en keeper naar binnen",
+      "omschrijving": "Een 'pinball'-goal die niemand had kunnen voorspellen."
+    },
+    {
+      "id": "onbedoeld_lichaamsdeel",
+      "naam": "speler scoort met onbedoeld lichaamsdeel",
+      "omschrijving": "Een onbedoelde handsbal of knie wordt per ongeluk als doelpunt geteld."
+    },
+    {
+      "id": "drone_of_tak",
+      "naam": "bal raakt drone of afgewaaide tak",
+      "omschrijving": "Een rondvliegende drone of afgewaaide tak verandert de baan van de bal compleet."
+    },
+    {
+      "id": "slow_motion_lijn",
+      "naam": "bal rolt tergend langzaam over de doellijn",
+      "omschrijving": "Twee spelers botsen en de bal rolt in slow motion over de lijn terwijl iedereen bevroren toekijkt."
+    },
+    {
+      "id": "keeper_viert_te_vroeg",
+      "naam": "keeper viert te vroeg en bal gaat alsnog in",
+      "omschrijving": "Een schot lijkt op de lat te gaan, maar valt door spin en wind alsnog binnen."
+    },
+    {
+      "id": "bal_vast_onder_bord",
+      "naam": "bal zit vast onder reclamebord of in net",
+      "omschrijving": "De bal komt vast te zitten en wordt pas na seconden losgelaten, net over de lijn."
+    }
+  ]
+}
