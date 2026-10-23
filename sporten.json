@@ -1,1 +1,126 @@
-
+{
+  "categorie": "sporten_met_doel",
+  "versie": "1.0",
+  "sporten": [
+    {
+      "id": "voetbal",
+      "naam": "voetbal",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "zaalvoetbal",
+      "naam": "zaalvoetbal",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "strandvoetbal",
+      "naam": "strandvoetbal",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "hockey",
+      "naam": "hockey",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "zaalhockey",
+      "naam": "zaalhockey",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "ijshockey",
+      "naam": "ijshockey",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "handbal",
+      "naam": "handbal",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "waterpolo",
+      "naam": "waterpolo",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "lacrosse",
+      "naam": "lacrosse",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "korfbal",
+      "naam": "korfbal",
+      "geslacht": ["gemengd", "mannen", "vrouwen"],
+      "doel_type": "ring"
+    },
+    {
+      "id": "basketbal",
+      "naam": "basketbal",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "ring"
+    },
+    {
+      "id": "3x3_basketbal",
+      "naam": "3x3 basketbal",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "ring"
+    },
+    {
+      "id": "goalball",
+      "naam": "goalball",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "net"
+    },
+    {
+      "id": "kanopolo",
+      "naam": "kanopolo",
+      "geslacht": ["gemengd"],
+      "doel_type": "net"
+    },
+    {
+      "id": "hurly_burly",
+      "naam": "hurly-burly",
+      "geslacht": ["gemengd"],
+      "doel_type": "net"
+    },
+    {
+      "id": "polo",
+      "naam": "polo",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "palen"
+    },
+    {
+      "id": "fietsenpolo",
+      "naam": "fietsenpolo",
+      "geslacht": ["gemengd"],
+      "doel_type": "palen"
+    },
+    {
+      "id": "shinty",
+      "naam": "shinty",
+      "geslacht": ["mannen", "vrouwen"],
+      "doel_type": "palen"
+    },
+    {
+      "id": "treibball",
+      "naam": "treibball",
+      "geslacht": ["gemengd"],
+      "doel_type": "mikpunt"
+    },
+    {
+      "id": "bucketbal",
+      "naam": "bucketbal",
+      "geslacht": ["gemengd"],
+      "doel_type": "mikpunt"
+    }
+  ]
+}
