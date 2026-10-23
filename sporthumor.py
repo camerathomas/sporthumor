@@ -53,10 +53,15 @@ def genereer_image_prompt(sport, handeling, twist):
         "Houd het bij 1-2 zinnen, maximaal 60 woorden."
     )
 
+try:
     response = client.models.generate_content(
         model="gemini-3.5-flash",
         contents=[system_instruction, ruwe_situatie]
     )
+    return ruwe_situatie, response.text.strip()
+except Exception as e:
+    st.error(f"⚠️ Fout bij het genereren van de prompt: {e}")
+    st.stop()
 
     return ruwe_situatie, response.text.strip()
 
