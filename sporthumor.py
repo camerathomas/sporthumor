@@ -27,7 +27,7 @@ def laad_json(bestandsnaam):
 
 sporten_data = laad_json("sporten.json")
 handelingen_data = laad_json("handelingen.json")
-twists_data = laad_json("twist.json")
+twist_data = laad_json("twist.json")
 
 # --- Willekeurige selectie ---
 def kies_willekeurig(data, sleutel):
@@ -56,7 +56,7 @@ def genereer_image_prompt(sport, handeling, twist):
     )
     
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.1-flash",
         contents=[system_instruction, ruwe_situatie]
     )
     
@@ -68,7 +68,7 @@ st.markdown("Klik op de knop om een willekeurige absurde sportscène te generere
 if st.button("🎲 Genereer een sporthumor situatie", type="primary"):
     sport = kies_willekeurig(sporten_data, "sporten")
     handeling = kies_willekeurig(handelingen_data, "handelingen")
-    twist = kies_willekeurig(twists_data, "twists")
+    twist = kies_willekeurig(twist_data, "twist")
     
     with st.spinner("Bezig met genereren..."):
         ruwe_situatie, image_prompt = genereer_image_prompt(sport, handeling, twist)
