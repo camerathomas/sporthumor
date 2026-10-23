@@ -1,7 +1,7 @@
 {
   "categorie": "twist",
   "versie": "1.0",
-  "twists": [
+  "twist": [
     {
       "id": "oneffen_veld",
       "naam": "bal stuitert via een gat in het veld",
