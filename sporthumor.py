@@ -8,7 +8,7 @@ st.set_page_config(page_title="Sporthumor Prompt Generator", page_icon="🤪")
 st.title("🤪 Sporthumor Prompt Generator")
 st.caption("Genereer absurde situaties voor je 5-seconden video's.")
 
-# API key ophalen (lokaal via .streamlit/secrets.toml, cloud via Settings > Secrets)
+# API key ophalen
 try:
     api_key = st.secrets["GEMINI_API_KEY"]
 except KeyError:
@@ -34,7 +34,7 @@ def kies_willekeurig(data, sleutel):
         st.stop()
     return random.choice(data[sleutel])
 
-# --- Prompt naar Gemini sturen ---
+# --- Prompt naar Gemini sturen (tekst) ---
 def genereer_image_prompt(sport, handeling, twist):
     geslacht = random.choice(sport["geslacht"]) if isinstance(sport["geslacht"], list) else sport["geslacht"]
 
@@ -53,17 +53,32 @@ def genereer_image_prompt(sport, handeling, twist):
         "Houd het bij 1-2 zinnen, maximaal 60 woorden."
     )
 
-try:
-    response = client.models.generate_content(
-        model="gemini-3.5-flash",
-        contents=[system_instruction, ruwe_situatie]
-    )
-    return ruwe_situatie, response.text.strip()
-except Exception as e:
-    st.error(f"⚠️ Fout bij het genereren van de prompt: {e}")
-    st.stop()
+    try:
+        response = client.models.generate_content(
+            model="gemini-3.5-flash",
+            contents=[system_instruction, ruwe_situatie]
+        )
+        return ruwe_situatie, response.text.strip()
+    except Exception as e:
+        st.error(f"⚠️ Fout bij het genereren van de prompt: {e}")
+        st.stop()
 
-    return ruwe_situatie, response.text.strip()
+# --- Afbeelding genereren met Nano Banana 2 Lite ---
+def genereer_afbeelding(image_prompt):
+    try:
+        response = client.models.generate_content(
+            model="gemini-3.1-flash-lite-image",
+            contents=[image_prompt]
+        )
+        for part in response.candidates[0].content.parts:
+            if part.inline_data:
+                return part.inline_data.data
+        st.warning("Het model gaf geen afbeeldingsdata terug.")
+        return None
+    except Exception as e:
+        st.error(f"⚠️ Fout bij het genereren van de afbeelding: {e}")
+        st.info("Dit model is mogelijk niet beschikbaar in de gratis tier.")
+        return None
 
 # --- UI ---
 st.markdown("Klik op de knop om een willekeurige absurde sportscène te genereren.")
@@ -88,6 +103,14 @@ if st.button("🎲 Genereer een sporthumor situatie", type="primary"):
         st.write(f"**Sport:** {sport['naam']} ({', '.join(sport['geslacht'])})")
         st.write(f"**Handeling:** {handeling['naam']} — {handeling['omschrijving']}")
         st.write(f"**Twist:** {twist['naam']} — {twist['omschrijving']}")
+
+    st.divider()
+
+    if st.button("🖼️ Genereer afbeelding (Nano Banana 2 Lite)", type="secondary"):
+        with st.spinner("Bezig met tekenen..."):
+            afbeelding_bytes = genereer_afbeelding(image_prompt)
+            if afbeelding_bytes:
+                st.image(afbeelding_bytes, caption="Jouw absurde sportscène", use_container_width=True)
 
 st.divider()
 st.caption("Totaal aantal combinaties: 20 × 20 × 20 = **8000**")
