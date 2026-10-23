@@ -1,0 +1,26 @@
+{
+  "categorie": "handelingen",
+  "versie": "1.0",
+  "handelingen": [
+    { "id": "scoren", "naam": "scoren", "omschrijving": "de bal/puck in het doel werken" },
+    { "id": "missen", "naam": "missen", "omschrijving": "op het doel mikken maar ernaast schieten" },
+    { "id": "keepen", "naam": "keepen", "omschrijving": "een schot tegenhouden" },
+    { "id": "passen", "naam": "passen", "omschrijving": "de bal naar een medespeler spelen" },
+    { "id": "dribbelen", "naam": "dribbelen", "omschrijving": "met de bal langs tegenstanders gaan" },
+    { "id": "tackelen", "naam": "tackelen", "omschrijving": "de tegenstander van de bal beroven" },
+    { "id": "vallen", "naam": "vallen", "omschrijving": "struikelen of onderuit gaan" },
+    { "id": "juichen", "naam": "juichen", "omschrijving": "een doelpunt vieren" },
+    { "id": "protesteren", "naam": "protesteren", "omschrijving": "bij de scheidsrechter klagen" },
+    { "id": "wisselen", "naam": "wisselen", "omschrijving": "het veld verlaten en een ander erin" },
+    { "id": "coachen", "naam": "coachen", "omschrijving": "aanwijzingen vanaf de zijlijn schreeuwen" },
+    { "id": "tijdrekken", "naam": "tijdrekken", "omschrijving": "opzettelijk langzaam doen" },
+    { "id": "een_kaart_krijgen", "naam": "een kaart krijgen", "omschrijving": "geel of rood krijgen van de scheids" },
+    { "id": "geblesseerd_raken", "naam": "geblesseerd raken", "omschrijving": "een blessure oplopen" },
+    { "id": "water_drinken", "naam": "water drinken", "omschrijving": "even pauze nemen om te drinken" },
+    { "id": "de_bal_verliezen", "naam": "de bal verliezen", "omschrijving": "de controle over de bal kwijtraken" },
+    { "id": "een_truc_doen", "naam": "een truc doen", "omschrijving": "een sierlijke of onverwachte beweging maken" },
+    { "id": "onderling_overleggen", "naam": "onderling overleggen", "omschrijving": "met medespelers een strategie bespreken" },
+    { "id": "naar_de_bal_kijken", "naam": "naar de bal kijken", "omschrijving": "afwachtend de bal volgen" },
+    { "id": "de_scheidsrechter_ompraten", "naam": "de scheidsrechter ompraten", "omschrijving": "proberen de scheids te beïnvloeden" }
+  ]
+}
