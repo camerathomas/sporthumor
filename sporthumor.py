@@ -27,7 +27,7 @@ def laad_json(bestandsnaam):
 
 sporten_data = laad_json("sporten.json")
 handelingen_data = laad_json("handelingen.json")
-twists_data = laad_json("twists.json")
+twists_data = laad_json("twist.json")
 
 # --- Willekeurige selectie ---
 def kies_willekeurig(data, sleutel):
