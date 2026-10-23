@@ -54,7 +54,7 @@ def genereer_image_prompt(sport, handeling, twist):
     )
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.5-flash",
         contents=[system_instruction, ruwe_situatie]
     )
 
